@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube to PipePipe",
+  "version": "1.0.0",
+  "description": "Opens YouTube links in your default YouTube app (PipePipe, NewPipe...) instead of the browser.",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["yt.js", "content.js"],
+    "run_at": "document_start"
+  }]
+}
